@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <title>Hot Brands</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant" />
+    
+    
+
+
+    <style>
+    /* Your styles go here */
+    .brands
+    {
+        margin: 0;
+        padding: 0;
+        background-color: rgba(124, 124, 124, 0.877);
+        font-family: cormorant;
+    }
+    .contain
+    {
+        width: 1170px;
+        background: rgba(124, 124, 124, 0.877);
+        margin: 30px auto 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contain .dest-card
+    {
+        width: 350px;
+        height: 350px;
+        position: relative;
+        background-color: rgba(114, 98, 78, 0.733);
+        margin: 20px;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+    .contain .dest-card .dest-img
+    {
+        position: center;
+        overflow: hidden;
+    }
+    .contain .dest-card .dest-img img
+    {
+        width: 100%;
+        transition: transform 3%;
+    }
+    .contain .dest-card:hover .dest-img img
+    {
+        transform: scale(1.5);
+    }
+
+    #topnav
+    {
+        list-style: none;
+        overflow: hidden;
+    }
+
+    li
+    {
+        float: left;
+        display: block;
+        text-align: center;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    a
+    {
+        text-decoration: none;
+        color: rgb(88, 48, 48);
+    }
+
+    
+    </style>
+  </head>
+
+  <body>
+    
+        <div id="menuOne">
+            <div class="topnav" id="topnav">
+                <ul>
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='staffpicks.html'>Staff Picks</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="aboutsus.html">About us</a></li>
+                    <li><a href='hotbrands.html'>Hot Brands</a></li>
+                    <li><a href='contactus.html'>Contact Us</a></li>
+                </ul>
+            </div>
+        </div>    
+ 
+    <!-- Your HTML goes here -->
+    
+    <section class="brands">
+        <div class="contain">
+            <div class="dest-card">
+                <div class="dest-img">
+                    <a href="https://www.alyxstudio.com/"> <img src="alyxlogo.png"alt="ALYX"></a>
+                </div>
+            </div>
+            <div class="dest-card">
+                <div class="dest-img">
+                    <a href="https://midnightstudios.live/"> <img src="midnightstudioslogo.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="dest-card">
+                <div class="dest-img">
+                    <a href="https://bornfrompain.jp/"> <img src="Sickologo.jpg" alt="Born from Pain"></a>
+                </div>
+            </div>
+            <div class="dest-card">
+                <div class="dest-img">
+                    <a href="https://humanmade.jp/"> <img src="humanmadelogo.jpg" alt="Human Made"></a>
+                </div>
+            </div>
+            <div class="dest-card">
+                <div class="dest-img">
+                    <a href="https://www.amiparis.com/us/"> <img src="amilogo.png" alt="AMI Paris"></a>
+                </div>
+            </div>
+            <div class="dest-card">
+                <div class="dest-img">
+                    <a href="https://shop.fourtwofouronfairfax.com/"> <img src="424logo.png" alt="424 on Fairfax"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>
+
+
