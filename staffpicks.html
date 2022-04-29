@@ -1,90 +1,99 @@
 <!DOCTYPE html>
 
-<html lang="en"> 
-
+<html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Staff Picks</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant" />
-    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Telex&display=swap" rel="stylesheet"> 
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Cormorant"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Telex&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="menuStyle.css" />
 
     <style>
-    /* Your styles go here */
-    *
-    {
+      /* Your styles go here */
+      * {
         box-sizing: border-box;
-    }
-    .p-top
-    {
-        font-family: 'Telex', sans-serif;
+        margin: 0;
+        padding: 0;
+        /* font-family: Optima, sans-serif; */
+      }
+
+      #site_map {
+          font-size: 10pt;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          text-align: left;
+          font-weight: bold;
+      }
+      .p-top {
+        font-family: "Telex", sans-serif;
         color: white;
         font-size: 22px;
         font-weight: 400;
         margin-left: 250px;
         margin-right: 250px;
         background-color: rgb(146, 120, 120);
-    }
-    .contain
-    {
+      }
+      .contain {
         width: 100%;
         height: 100%;
         margin: 0;
         position: relative;
-    }
-    .textused
-    {
+      }
+      .textused {
         font-family: Optima, sans-serif;
         color: black;
-        text-align: center; 
-        
-    }
-    #topwords
-    {
+        text-align: center;
+      }
+      #topwords {
         margin-left: 400px;
         margin-right: 400px;
-    }
-    .profile
-    {
+      }
+      .profile {
         display: flex;
         align-items: center;
         margin-bottom: 6rem;
         margin-left: 200px;
         margin-right: 200px;
-    }
-    .product-image
-    {
+      }
+      .product-image {
         flex: 1;
-    }
-    .informations
-    {
+      }
+      .informations {
         flex: 1;
-    }
-    .informations h5
-    {
+      }
+      .informations h5 {
         font-size: 40px;
         font-weight: 900;
-        text-transform:uppercase;
+        text-transform: uppercase;
         margin-bottom: 0%;
         padding: 0%;
         font-family: Arial, Helvetica, sans-serif;
         color: black;
-    }
-    .informations h1
-    {
+      }
+      .informations h1 {
         font-size: 20px;
         font-weight: 400;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-    }
-    .right-marg
-    {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      .right-marg {
         margin-right: 5rem;
-    }
-    .title
-    {
-        font-family: 'Telex', sans-serif;
+      }
+      .title {
+        font-family: "Telex", sans-serif;
         font-size: 35px;
         line-height: 35px;
         margin-bottom: 12px;
@@ -92,127 +101,180 @@
         font-weight: 900;
         color: rgb(0, 0, 0);
         text-shadow: 2px 2px 10px rgb(88, 48, 48);
-    }
-    .btn
-    {
-        display: inline-block;  
+      }
+      .btn {
+        display: inline-block;
         text-transform: uppercase;
         letter-spacing: 2.5px;
-        border-radius:0;
+        border-radius: 0;
         border: 1px solid #3a3222;
         padding: 0;
-    }
-    .cta-btn
-    {
+      }
+      .cta-btn {
         font-size: 18px;
         background-color: rgb(88, 48, 48);
         font-weight: 200;
         padding: 14px 28px;
         color: white;
-        border-radius:6.5px;
-        
-        
-    }
-    .cta-btn:hover, .cta-btn:focus
-    {
-        color:white;
+        border-radius: 6.5px;
+      }
+      .cta-btn:hover,
+      .cta-btn:focus {
+        color: white;
         background-color: #000000;
-    }
-    
-    #topnav
-    {
+      }
+
+      #topnav {
         list-style: none;
         overflow: hidden;
-    }
+      }
 
-    li
-    {
+      li {
         float: left;
         display: block;
         text-align: center;
         padding-left: 12px;
         padding-right: 12px;
-    }
+      }
 
-    a
-    {
+      a {
         text-decoration: none;
         color: rgb(88, 48, 48);
-    }
-    
+      }
+
+      @media screen and (max-width: 768px) {
+        .contain {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .p-top {
+          width: 70%;
+        }
+        .profile {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
     </style>
   </head>
 
   <body>
-   
-        <div id="menuOne">
-            <div class="topnav" id="topnav">
-                <ul>
-                    <li><a href='index.html'>Home</a></li>
-                    <li><a href='staffpicks.html'>Staff Picks</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="aboutsus.html">About us</a></li>
-                    <li><a href='hotbrands.html'>Hot Brands</a></li>
-                    <li><a href='contactus.html'>Contact Us</a></li>
-                </ul>
-            </div>
-        </div>    
-   
-    
-   
-    <section class="textused" id="textused">
-        <div class="contain">
-            <div class="title">
-                <h1>Fashion Drip | Streetwear Community</h1>
-            </div>
-         <div class="p-top">
-                <p class="top">
-                    Remember to submit pictures of your best outfit of the week, winners will be featured on our instagram and win a pair of yeezy boost.
-                    These are the  favorite pieces of the week. Voted on by the community and reviewed by staff, the items chosen include a top, a bottom, kicks.
-                    
-                </p>
-            </div>  
-            <div class="profile">
-                <div class="product-image right-marg">
-                    <img src="maisonmargiela-reebox.jpg" alt="lion eyes" title="Lion Eyes" height="400">
-                </div>
-                <div class="informations">
-                    <h5>Reebok X Mason Margiela</h5>
-                    <h1>Sneaker Collab</h1>
-                    <p>
-                        Mason Margiela might have curated their best take on Reebok's classic Club C's. These kicks are the perfect daily shoe, their moderate distress and classic style go with any fit. The pair is being released in both the black and white colorways.
-                    </p>
-                    <a href="https://www.maisonmargiela.com/us/maison-margiela/sneakers_cod17214119ps.html" class="btn cta-btn">Learn More</a>
-                </div>
-            </div>
-            <div class="profile">
-                <div class="informations right-marg">
-                    <h5>Yeezy X Gap</h5>
-                    <h1>Engineered by Balenciaga</h1>
-                    <p>
-                        Kanye West teamed up with Balenciaga to architect his anticipated Yeezy & Gap collaboration. They released a set of hoodies,t-shirts, and sweats in different colorways. With a strong focus on the boxy fit, this hoodie is easily one of the hardest items Yeezy has dropped to date. 
-                    </p>
-                    <a href="https://www.yeezygap.com/collections/all" class="btn cta-btn">Learn More</a>
-                </div>
-                <div class="product-image right-marg">
-                    <img src="ye-gap-bal.jpg" alt="elephant" title="Elephant" height="400">
-                </div>
-            </div>
-            <div class="profile">
-                <div class=" product-image right-marg">
-                    <img src="stoneisland.jpg" alt="lion eyes" title="Lion Eyes" height="400">
-                </div>
-                <div class="informations">
-                    <h5>Stone Island Summer Drip</h5>
-                    <h1>Olive Green Linen Canvas Pants</h1>
-                    <p>
-                         Stone Island hit it on the money with these comfy linen pants that are perfect for the summer. The garment is died in their iconic olive green colorway. The pants are available on Stoneisland's website along with the rest of their spring/summer 2022 collection.
-                    </p>
-                    <a href="https://www.stoneisland.com/us/stone-island/trousers_cod13662540ws.html#dept=pntsjnss" class="btn cta-btn">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div id="menuOne">
+      <div class="topnav" id="topnav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="staffpicks.html">Staff Picks</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="aboutsus.html">About us</a></li>
+          <li><a href="hotbrands.html">Hot Brands</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
 
+    <section class="textused" id="textused">
+      <div class="contain">
+        <div class="title">
+          <h1>Fashion Drip | Streetwear Community</h1>
+          <br>
+        </div>
+        
+        <div class="p-top">
+          <p class="top" onclick="changeText()">
+            These are the favorite pieces of the week. Voted on by the community
+            and reviewed by staff, the items chosen include a top, a bottom,
+            kicks.
+          </p>
+          <br>
+        </div>
+        <br>
+        <div class="profile">
+          <div class="product-image right-marg">
+            <img
+              src="maisonmargiela-reebox.jpg"
+              alt="lion eyes"
+              title="Lion Eyes"
+              height="400"
+            />
+          </div>
+          <div class="informations">
+            <h5>Reebok X Mason Margiela</h5>
+            <h1>Sneaker Collab</h1>
+            <p>
+              Mason Margiela might have curated their best take on Reebok's
+              classic Club C's. These kicks are the perfect daily shoe, their
+              moderate distress and classic style go with any fit. The pair is
+              being released in both the black and white colorways.
+            </p>
+            <a
+              href="https://www.maisonmargiela.com/us/maison-margiela/sneakers_cod17214119ps.html"
+              class="btn cta-btn"
+              >Learn More</a>
+          </div>
+        </div>
+        <div class="profile">
+          <div class="informations right-marg">
+            <h5>Yeezy X Gap</h5>
+            <h1>Engineered by Balenciaga</h1>
+            <p>
+              Kanye West teamed up with Balenciaga to architect his anticipated
+              Yeezy & Gap collaboration. They released a set of
+              hoodies,t-shirts, and sweats in different colorways. With a strong
+              focus on the boxy fit, this hoodie is easily one of the hardest
+              items Yeezy has dropped to date.
+            </p>
+            <a
+              href="https://www.yeezygap.com/collections/all"
+              class="btn cta-btn"
+              >Learn More</a>
+          </div>
+          <div class="product-image right-marg">
+            <img
+              src="ye-gap-bal.jpg"
+              alt="elephant"
+              title="Elephant"
+              height="400"
+            />
+          </div>
+        </div>
+        <div class="profile">
+          <div class="product-image right-marg">
+            <img
+              src="stoneisland.jpg"
+              alt="lion eyes"
+              title="Lion Eyes"
+              height="400"
+            />
+          </div>
+          <div class="informations">
+            <h5>Stone Island Summer Drip</h5>
+            <h1>Olive Green Linen Canvas Pants</h1>
+            <p>
+              Stone Island hit it on the money with these comfy linen pants that
+              are perfect for the summer. The garment is died in their iconic
+              olive green colorway. The pants are available on Stoneisland's
+              website along with the rest of their spring/summer 2022
+              collection.
+            </p>
+             <a
+              href="https://www.stoneisland.com/us/stone-island/trousers_cod13662540ws.html#dept=pntsjnss"
+              class="btn cta-btn"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <a id="site_map" href="sitemap.html">Sitemap</a>
   </body>
+  <script>
+    function changeText() {
+      const textItem = document.getElementsByClassName("top")[0];
+      textItem.innerText =
+        "Remember to submit pictures of your best outfit of the week, winners will be featured on our instagram and win a pair of yeezy boost.";
+    }
+    //text changes when the banner is clicked//
+  </script>
 </html>

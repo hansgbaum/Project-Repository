@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 
-<html lang="en"> 
-
+<html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant" />
-    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Cormorant"
+    />
+
+    <link rel="stylesheet" href="menuStyle.css" />
 
     <style>
-    /* Your styles go here */
-    .topnav a.active 
-    {
+      /* Your styles go here */
+      .topnav a.active {
         background-color: #d6c0a3;
-         color: rgb(255, 237, 215);
-    }
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
-    *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    
-    }
-    body
-    {
-        background-image: url(contactback.jpg); 
+        color: rgb(255, 237, 215);
+      }
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+      }
+
+      #site_map {
+          font-size: 10pt;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          text-align: left;
+          font-weight: bold;
+      }
+      
+      body {
+        background-image: url(contactback.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
         height: 100vh;
-    }
-    .con
-    {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    padding: 0 20px;
-    }
-    .ContactForm 
-    {
+      }
+      .con {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        padding: 0 20px;
+      }
+      .ContactForm {
+        background-color: red;
         max-width: 550px;
         margin: 0 auto;
         background: #ffffff;
@@ -48,34 +55,31 @@
         border-radius: 5px;
         display: flex;
         box-shadow: 0 0 10px;
-    }
-    .BlankFields
-    {
+        margin-top: 20px;
+      }
+      .BlankFields {
         display: flex;
         flex-direction: column;
         margin-right: 4%;
-    }
-    .BlankFields, .message
-    {
+      }
+      .BlankFields,
+      .message {
         width: 48%;
-    }
-    .BlankFields .input,
-    .message textarea
-    {
-        margin: 10px 0; 
+      }
+      .BlankFields .input,
+      .message textarea {
+        margin: 10px 0;
         background: transparent;
         border: 0;
         border-bottom: 2px solid #5c5c5c;
         padding: 10px;
         color: #5c5c5c;
         width: 100%;
-    }
-    .message textarea 
-    {
+      }
+      .message textarea {
         height: 212px;
-    }
-    .button
-    {
+      }
+      .button {
         background: rgba(124, 124, 124, 0.877);
         text-align: center;
         padding: 15px;
@@ -83,77 +87,115 @@
         color: #fff;
         cursor: pointer;
         text-transform: uppercase;
-    }
+      }
 
-    @media screen and (max-width: 600px)
-    {
-        .ContactForm
-        {
-            flex-direction: column
+      @media screen and (max-width: 600px) {
+        .ContactForm {
+          flex-direction: column;
         }
-        .message textarea
-        {
-            height: 80px;
+        .message textarea {
+          height: 80px;
         }
-        .BlankFields, .message
-        {
-            width: 100%;
+        .BlankFields,
+        .message {
+          width: 100%;
         }
-    }
+      }
 
-    #topnav
-    {
+      #topnav {
         list-style: none;
         overflow: hidden;
-    }
+      }
 
-    li
-    {
+      li {
         float: left;
         display: block;
         text-align: center;
         padding-left: 12px;
         padding-right: 12px;
-    }
+      }
 
-    a
-    {
+      a {
         text-decoration: none;
         color: rgb(88, 48, 48);
-    }
+      }
     </style>
   </head>
 
   <body>
-        <div id="menuOne">
-            <div class="topnav" id="topnav">
-                <ul>
-                    <li><a href='index.html'>Home</a></li>
-                    <li><a href='staffpicks.html'>Staff Picks</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="aboutsus.html">About us</a></li>
-                    <li><a href='hotbrands.html'>Hot Brands</a></li>
-                    <li><a href='contactus.html'>Contact Us</a></li>
-                </ul>
-            </div>
-        </div>    
-
-   <div id="" 
-   <form action = "https://oim-apis.herokuapp.com/form2"></form>
-        <div class="ContactForm">
-            <div class="BlankFields">
-                <input type="text" class="input" placeholder="Name (First and Last)">
-                <input type="text" class="input" placeholder="Email Address">
-                <input type="text" class="input" placeholder="Phone Number">
-            </div>
-            <div class="message">
-                <textarea placeholder="Message"></textarea>
-                <div class="button">Send Message</div>
-            </div>
-        </div>
+    <div id="menuOne">
+      <div class="topnav" id="topnav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="staffpicks.html">Staff Picks</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="aboutsus.html">About us</a></li>
+          <li><a href="hotbrands.html">Hot Brands</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
 
-    
-    
+    <div id="">
+      <form
+        name="contactForm"
+        method="post"
+        action="https://oim-apis.herokuapp.com/form2"
+      ></form>
+      <div class="ContactForm">
+        <div class="BlankFields">
+          <input
+            type="text"
+            class="input"
+            placeholder="Name (First and Last)"
+            name="name"
+          />
+          <input
+            type="text"
+            class="input"
+            placeholder="Email Address"
+            name="email"
+          />
+          <input
+            type="text"
+            class="input"
+            placeholder="Phone Number"
+            name="phone"
+          />
+        </div>
+        <div class="message">
+          <textarea placeholder="Message" name="message"></textarea>
+          <div class="button" onclick="submitForm()">Send Message</div>
+        </div>
+      </div>
+    </div>
+    <a id="site_map" href="sitemap.html">Sitemap</a>
   </body>
+
+  <script>
+    function submitForm() {
+      const form = document.forms["contactForm"];
+      const name = document.getElementsByName("name")[0].value;
+      const email = document.getElementsByName("email")[0].value;
+      const phone = document.getElementsByName("phone")[0].value;
+      const message = document.getElementsByName("message")[0].value;
+      if (name === "") {
+        alert("Name cannot be empty");
+        return false;
+      }
+      if (email === "") {
+        alert("Email cannot be empty");
+        return false;
+      }
+      if (phone === "") {
+        alert("Phone cannot be empty");
+        return false;
+      }
+      if (message === "") {
+        alert("Message cannot be empty");
+        return false;
+      }
+      form.submit();
+    }
+  </script>
 </html>

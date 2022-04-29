@@ -1,65 +1,56 @@
 <!DOCTYPE html>
 
-<html lang="en"> 
-
+<html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Home Page</title>
-    
+    <link rel="stylesheet" href="menuStyle.css" />
     <style>
-    /* Your styles go here */   
-    *
-    {
+      /* Your styles go here */
+      * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-    }
-    :root
-    {
+      }
+      :root {
         --main-font: Optima, sans-serif;
-        --secondary-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+        --secondary-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         --body-font: Optima, sans-serif;
         --main-font-color-dark: black;
         --secondary-font-color: rgb(88, 48, 48);
         --body-font-color: #ffffff;
-    }
-    html
-    {
+      }
+      html {
         scroll-behavior: smooth;
         font-family: var(--body-font);
         font-size: 12px;
         color: var(--body-font-color);
-    }
-    section
-    {
+      }
+      section {
         padding: 64px 0;
-    }
-    img
-    {
+      }
+      img {
         width: 60%;
         max-width: 100%;
-    }
-    a
-    {
+      }
+      a {
         text-decoration: none;
-    }
-    p
-    {
+      }
+      p {
         font-size: 20px;
-        margin-left:auto;
-        margin-right:auto;
-        text-align:center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
         width: 1000px;
-    }
-    .container
-    {
+      }
+      .container {
         width: 100%;
         max-width: 1960px;
         margin: 0 auto;
         padding: 0 38px;
-    }
-    .herohead
-    {
+      }
+      .herohead {
         width: 100%;
         height: 100vh;
         background: url(gray.jpg) center no-repeat;
@@ -67,23 +58,20 @@
         display: flex;
         align-items: center;
         text-align: center;
-
-    }
-    .sub
-    {
+      }
+      .sub {
         font-size: 80px;
         font-family: var(--secondary-font);
         color: var(--secondary-font-color);
         font-weight: 550;
-        line-height: .5;
+        line-height: 0.5;
         letter-spacing: 1.5px;
-        font-style: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+        font-style: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         font-weight: bold;
-        
-    }
+      }
 
-    .head 
-    {
+      .head {
         color: rgb(0, 0, 0);
         font-size: 50px;
         font-family: var(--main-font);
@@ -92,49 +80,41 @@
         letter-spacing: 5px;
         margin-right: -5px;
         margin-top: 15px;
-    }
-    .space
-    {
+      }
+      .space {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .line
-    {
+      }
+      .line {
         width: 100%;
         max-width: 135px;
         height: 4px;
         background-color: white;
         position: relative;
-
-    }
-    .line-r::before, .line-l::before
-    {
-        content: '';
+      }
+      .line-r::before,
+      .line-l::before {
+        content: "";
         position: absolute;
         border: 10px solid transparent;
         top: 50%;
         transform: translateY(-50%);
-        
-    }
-    .line-r::before
-    {
+      }
+      .line-r::before {
         border-right-color: white;
         right: 0;
-    }
-    .line-l::before
-    {
+      }
+      .line-l::before {
         border-left-color: white;
         left: 0;
-    }
-    .asterisk
-    {
+      }
+      .asterisk {
         font-size: 20px;
         color: white;
         margin: 0 25px;
-    }
-    .head-info h5
-    {
+      }
+      .head-info h5 {
         color: white;
         font-size: 18px;
         font-weight: 200;
@@ -143,137 +123,131 @@
         margin-top: 15px;
         letter-spacing: 3.5px;
         margin-right: -3.5px;
-    }
-    .btn
-    {
-        display: inline-block;  
+      }
+      .btn {
+        display: inline-block;
         text-transform: uppercase;
         letter-spacing: 2.5px;
         margin-right: -2.5px;
-    }
-    .cta-btn
-    {
+      }
+      .cta-btn {
         font-size: 18px;
         background-color: rgba(88, 48, 48, 0.74);
         font-weight: 200;
         padding: 14px 28px;
         color: var(--body-font-color);
-        border-radius:6.5px;
-        transition: background-color .5s;
-    }
-    .cta-btn:hover, .cta-btn:focus
-    {
-        color:white;
+        border-radius: 6.5px;
+        transition: background-color 0.5s;
+      }
+      .cta-btn:hover,
+      .cta-btn:focus {
+        color: white;
         background-color: var(--secondary-font-color);
-    }
-   
-    .totalheadline
-    {
+      }
+
+      .totalheadline {
         text-align: center;
-        margin-top:64px;
-    }
-    .our-story .totalheadline
-    {
+        margin-top: 64px;
+      }
+      .our-story .totalheadline {
         margin-top: 110px;
-    }
-    .totalheadline .asterisk
-    {
+      }
+      .totalheadline .asterisk {
         color: var(--body-font-color);
         margin: 38px 0;
-    }
-    .head-dark
-    {
-        color:rgb(255, 255, 255);
+      }
+      .head-dark {
+        color: rgb(255, 255, 255);
         letter-spacing: 10px;
         margin-right: -10px;
-    }
-    .totalheadline .sub
-    {
+      }
+      .totalheadline .sub {
         letter-spacing: -1px;
-        line-height: .42;
-    }
- 
-    .body-btn::before
-    {
-        content: '';
+        line-height: 0.42;
+      }
+
+      .body-btn::before {
+        content: "";
         position: absolute;
         left: 0;
         bottom: -3px;
         background-color: rgb(255, 255, 255);
-        transition: background-color .5s;
+        transition: background-color 0.5s;
         width: 100%;
-        height:2px;
-    }
-    .body-btn:hover, .body-btn:focus
-    {
-        color:var(--main-font-color-dark);
-    }
-    .body-btn:hover::before, .body-btn:focus::before
-    {
-        background-color:var(--main-font-color-dark);
-    }
-    /*explorepics*/
-    .img-group
-    {
+        height: 2px;
+      }
+      .body-btn:hover,
+      .body-btn:focus {
+        color: var(--main-font-color-dark);
+      }
+      .body-btn:hover::before,
+      .body-btn:focus::before {
+        background-color: var(--main-font-color-dark);
+      }
+      /*explorepics*/
+      .img-group {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1.5rem;
         justify-items: center;
         margin: 0;
         padding: 0;
-    }
+      }
 
-    #topnav
-    {
+      #topnav {
         list-style: none;
         overflow: hidden;
-    }
+      }
 
-    li
-    {
+      #site_map {
+          font-size: 10pt;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          text-align: left;
+          font-weight: bold;
+      }
+
+      li {
         float: left;
         display: block;
         text-align: center;
         padding-left: 12px;
         padding-right: 12px;
-    }
+      }
 
-    a
-    {
+      a {
         text-decoration: none;
         color: rgb(88, 48, 48);
-    }
+      }
     </style>
   </head>
 
   <body>
-   
-        <div id="menuOne">
-            <div class="topnav" id="topnav">
-                <ul>
-                    <li><a href='index.html'>Home</a></li>
-                    <li><a href='staffpicks.html'>Staff Picks</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="aboutsus.html">About us</a></li>
-                    <li><a href='hotbrands.html'>Hot Brands</a></li>
-                    <li><a href='contactus.html'>Contact Us</a></li>
-                </ul>
-            </div>
-        </div>    
-     
-<!--MENU BAR END-->
+    <div id="menuOne">
+      <div class="topnav" id="topnav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="staffpicks.html">Staff Picks</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="aboutsus.html">About us</a></li>
+          <li><a href="hotbrands.html">Hot Brands</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--MENU BAR END-->
     <!-- Your HTML goes here -->
     <section class="herohead" id="herohead">
-        <div class="container">
-            <h2 class="sub">
-                Fashion Drip
-            </h2>
-            <h1 class="head">Streetwear Community</h1>
-            <div class="head-info">
-                <div class="anim">
-                   
-                    <a href="staffpicks.html" class="btn cta-btn">DRIP</a>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="sub">Fashion Drip</h2>
+        <h1 class="head">Streetwear Community</h1>
+        <div class="head-info">
+             <div class="anim">
+            <a href="staffpicks.html" class="btn cta-btn">DRIP</a>
+          </div>
         </div>
-  
+      </div>
+    </section>
+    <a id="site_map" href="sitemap.html">Sitemap</a>
+  </body>
+</html>
